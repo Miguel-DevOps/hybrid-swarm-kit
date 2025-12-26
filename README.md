@@ -76,7 +76,7 @@ Instead of a single fragile cluster stretched across the Atlantic, HSP uses **de
 
 ```mermaid
 graph TD
-    User[User (Americas)] -->|HTTPS / <80ms| Caddy[Caddy Gateway (OCI)]
+    User["User (Americas)"] -->|"HTTPS / <80ms"| Caddy["Caddy Gateway (OCI)"]
     
     subgraph "USA Region (Production) — OCI"
         Caddy --> App[Client Applications]
